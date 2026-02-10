@@ -8,9 +8,9 @@ This mechanism allows a user to run a separate web app through JupyterHub.
 To try it, install this package into the same Python environment which is
 used to launch your single-user server::
 
-    sudo -E pip install git+https://github.com/arang129/serverjupyterpgweb.git
-    sudo -E pip install --upgrade git+https://github.com/arang129/serverjjupyterpgweb.git
-    sudo -E pip uninstall serverjjupyterpgweb
+    sudo -E pip install git+https://github.com/arang129/iframe_teaching_notes.git
+    sudo -E pip install --upgrade git+https://github.com/arang129/iframe_teaching_notes.git
+    sudo -E pip uninstall iframe_teaching_notes
 
 If your server is already running use the JupyterHub control panel
 (``/hub/home``) to stop and start it. You should have a new 'hello' option in
