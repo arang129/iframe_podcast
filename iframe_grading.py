@@ -16,7 +16,7 @@ def setup_iframe_grading():
     # Using a Unix socket prevents other users on a multi-user system from accessing
     # our server. The alternative is a TCP socket ('-p', '{port}').
     return {
-        'command': [sys.executable, '-m', 'iframe_teaching_notes', '-u', '{unix_socket}'],
+        'command': [sys.executable, '-m', 'iframe_grading', '-u', '{unix_socket}'],
         'unix_socket': True,
         'launcher_entry': {
             'enabled': True,
