@@ -12,16 +12,16 @@ __version__ = '0.038'
 # This is the entry point for jupyter-server-proxy . The packaging metadata
 # tells it about this function. For details, see:
 # https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html
-def setup_iframe_grading():
+def setup_iframe_podcast():
     # Using a Unix socket prevents other users on a multi-user system from accessing
     # our server. The alternative is a TCP socket ('-p', '{port}').
     return {
-        'command': [sys.executable, '-m', 'iframe_grading', '-u', '{unix_socket}'],
+        'command': [sys.executable, '-m', 'iframe_podcast', '-u', '{unix_socket}'],
         'unix_socket': True,
         'launcher_entry': {
             'enabled': True,
-            'icon_path': '/opt/tljh/hub/share/jupyterhub/yuntech.svg',
-            'title': '繳交作業',
+            'icon_path': '/opt/tljh/hub/share/jupyterhub/podcast.svg',
+            'title': 'Podcast',
         },
     }
 
@@ -69,7 +69,7 @@ TEMPLATE = """\
 <html>
 <head>
     <title>grading</title>
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/12404/12404306.png">
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0qAzTahft-g2MdHYfEc259R_sJHtxrZPww&s">
     
     <style>
         body {{
@@ -80,7 +80,7 @@ TEMPLATE = """\
     </style>
 </head>
 <body>
-    <iframe src="https://jupyter.yunlab.app/services/grading/" 
+    <iframe src="https://jupyter2.yunlab.app/services/podcasts-learning/" 
             style="width: 100vw; height: 100vh; border: none;">
     </iframe>
 </body>
